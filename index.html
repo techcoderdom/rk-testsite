@@ -9,8 +9,23 @@
 <body>
     <p>It's been a long time since I've done any coding and pushing any code to git.</p>
     <p>The first command if inititating a project is <strong>git init.</strong>  This initialises it as a git repository.</p>
-    <p>This repo is empty. So we tell git that we have files that need to be tracked.  Git will add these in the next commit. We <strong>Stage</strong> the files to be tracked.  git add .</p> 
+    <p>This repo is empty. So we tell git that we have new files (untracked) that need to be tracked.  Git will add these in the next commit. We <strong>Stage</strong> the files to be tracked.  git add .</p> 
     <p>This adds all the files or you could name specific ones.</p>
+    <p>git add is powerful.  You can git add *.html, (just html files) or *.php etc..</p>
     <p>git commit -m "describe what happened when this file was edited"</p>
+    <p>At the moment this is only tracked on our pc.  We haven't pushed to a remote repository.  With a remote repo you can work from any computer, work with teams.</p>
+    <p>Go to github.com to create new repository.</p>
+    <p>You can create a new repository on the command line
+        echo "# rk-testsite" >> README.md
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git remote add origin https://github.com/techcoderdom/rk-testsite.git
+        git push -u origin master</p>
+    <p>
+        …or  push an existing repository from the command line
+git remote add origin https://github.com/techcoderdom/rk-testsite.git
+git push -u origin master  (first time only, then git push)
+    </p>
 </body>
 </html>
